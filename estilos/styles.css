@@ -1,0 +1,8 @@
+a i{
+    font-size: 25px;
+    color: black;
+}
+
+a i:hover{
+    color: #007bff;
+}
