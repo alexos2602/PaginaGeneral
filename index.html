@@ -8,31 +8,29 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos/styles.css">
     <script src="https://kit.fontawesome.com/4b72acadba.js" crossorigin="anonymous"></script>
-        <title>Proyectos</title>
+    <title>Proyectos</title>
 </head>
-
 <body>
 
     <div class="container">
-
         <div class="row py-3 mx-1 justify-content-end">
-                <a href="https://github.com/alexos2602" target="blank"><i class="fab fa-github px-4"></i></a>
-                <a href="https://twitter.com/alejose0211" target="blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/josev232/?hl=es-la" target="blank"><i class="fab fa-instagram px-4"></i></a>
-        </div>    
-
+            <a href="https://github.com/alexos2602" target="blank"><i class="fab fa-github px-4"></i></a>
+            <a href="https://twitter.com/alejose0211" target="blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/josev232/?hl=es-la" target="blank"><i
+                    class="fab fa-instagram px-4"></i></a>
+        </div>
 
         <nav class="nav nav-pills nav-justified">
-            <a class="nav-item nav-link active" href="#">Proyectos</a>
-            <a class="nav-item nav-link" href="ejercicios.html">Ejercicios</a>
-            <a class="nav-item nav-link" href="todos.html">Todos</a>
-          </nav>
+            <a class="nav-item nav-link active filter" data-nombre='proyectos'>Proyectos</a>
+            <a class="nav-item nav-link filter" data-nombre='ejercicios'>Ejercicios</a>
+            <a class="nav-item nav-link filter" data-nombre='todos'>Todos</a>
+        </nav>
 
         <h1 class="p-3">Proyectos</h1>
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-            
-            <div class="col mb-4">
+
+            <div class="col mb-4 caja proyectos">
                 <div class="card">
                     <img src="Images/Papa.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -43,7 +41,7 @@
                 </div>
             </div>
 
-            <div class="col mb-4">
+            <div class="col mb-4 caja proyectos">
                 <div class="card">
                     <img src="Images/cafe.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -54,7 +52,7 @@
                 </div>
             </div>
 
-            <div class="col mb-4">
+            <div class="col mb-4 caja proyectos">
                 <div class="card">
                     <img src="Images/miromimente.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -65,8 +63,22 @@
                 </div>
             </div>
 
+            <div class="col mb-4 caja ejercicios">
+                <div class="card">
+                    <img src="Images/Crud.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Crud</h5>
+                        <p class="card-text">Crud sencillo con <b>Php</b>,<b>MySql</b></p> <br>
+                        <a href="http://supercrud.atwebpages.com/index.php" class="btn btn-primary"
+                            target="blank">Entrar</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
+        <script src="jquery.js"></script>
+        <script src="filtro.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>

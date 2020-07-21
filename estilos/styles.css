@@ -6,3 +6,7 @@ a i{
 a i:hover{
     color: #007bff;
 }
+
+.nav a:hover{
+    cursor: pointer;
+  }
